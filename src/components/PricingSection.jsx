@@ -5,9 +5,20 @@ import { fadeIn, textVariant } from "../utils/motion";
 const PricingSection = () => {
   const [productCount, setProductCount] = useState(1)
   
-  // Calculate prices based on product count
-  const starterPrice = Math.round(4000 * (productCount / 50))
-  const businessPrice = Math.round(7500 * (productCount / 50))
+  // Conversion settings
+  const USD_TO_PHP = 58;   // Example conversion rate
+  const MARKUP = 1.2;      // Optional markup (20%)
+
+  // Base prices in USD
+  const starterBase = 4000;
+  const businessBase = 7500;
+
+  // Prices converted to Peso
+  const starterPrice = Math.round(starterBase * (productCount / 50) * USD_TO_PHP * MARKUP);
+  const businessPrice = Math.round(businessBase * (productCount / 50) * USD_TO_PHP * MARKUP);
+
+  // Format numbers with commas (₱58,000 instead of 58000)
+  const formatPeso = (price) => `₱${price.toLocaleString()}/mo`;
 
   return (
     <motion.section 
@@ -43,7 +54,7 @@ const PricingSection = () => {
               variants={fadeIn('up', 0.7)}
               className="text-3xl font-bold mb-6"
             >
-              ${starterPrice}/mo
+              {formatPeso(starterPrice)}
             </motion.p>
           </motion.div>
           
@@ -62,7 +73,7 @@ const PricingSection = () => {
               variants={fadeIn('up', 0.7)}
               className="text-3xl font-bold mb-6"
             >
-              ${businessPrice}/mo
+              {formatPeso(businessPrice)}
             </motion.p>
           </motion.div>
         </motion.div>
@@ -121,4 +132,4 @@ const PricingSection = () => {
   )
 }
 
-export default PricingSection 
+export default PricingSection

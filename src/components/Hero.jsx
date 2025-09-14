@@ -22,7 +22,7 @@ const Hero = () => {
           whileInView="show"
           className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight"
         >
-          We boost the growth for{' '}
+         Own Your Time with Smart Automation{' '}
           <span className="text-blue-600 relative inline-block">
             Startup to Fortune 500
             <span className="absolute bottom-0 left-0 w-full h-0.5 bg-blue-200/60"></span>
@@ -37,7 +37,7 @@ const Hero = () => {
           whileInView="show"
           className="text-gray-600 text-lg md:text-xl max-w-xl"
         >
-          Get the most accurate leads, sales people training and conversions, tools and more — all within the same one billing.
+          Boost productivity and deliver better experiences with intelligent scheduling. From team coordination to customer bookings, manage it all seamlessly in one platform.
         </motion.p>
 
         <motion.div 
