@@ -32,21 +32,14 @@ A sleek and responsive landing page built with React, Tailwind CSS, and Framer M
 - npm or yarn
 
 ### Installation
-1. Clone the repository
-```bash
-git clone https://github.com/mdalmamunit427/modern-business-landing-page-react-tailwindcss
-
-cd modern-business-landing-page-react-tailwindcss
-```
 
 
-
-2. Install dependencies
+1. Install dependencies
 ```bash
 npm install
 ```
 
-3. Start the development server
+2. Start the development server
 ```bash
 npm run dev
 ```
@@ -67,18 +60,6 @@ src/
 │ ├── TestimonialsSection.jsx
 │ ├── NewsletterSection.jsx
 │ └── Footer.jsx
-
-## 🎨 Customization
-
-1. Replace the placeholder images and text with your own content
-2. Update the company logo and testimonials in the `data.js` file
-3. Modify the pricing plans in the `PricingSection.jsx` file
-4. Update the newsletter form in the `NewsletterSection.jsx` file
-
-## 📝 License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
 
 
 
